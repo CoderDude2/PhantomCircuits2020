@@ -18,7 +18,6 @@ import edu.wpi.first.wpilibj.PowerDistributionPanel;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
-
 public class Robot extends TimedRobot {
 
   /* Joysticks */
@@ -88,6 +87,7 @@ public class Robot extends TimedRobot {
     SmartDashboard.putNumber("Min Output", kMinOutput);
 
     SmartDashboard.putNumber("Shooter Speed", 0);
+
   }
   
   @Override
@@ -161,5 +161,3 @@ public class Robot extends TimedRobot {
   @Override
   public void disabledInit() {
   }
-
-}
