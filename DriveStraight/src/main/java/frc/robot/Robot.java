@@ -5,7 +5,6 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-//This is a test comment
 package frc.robot;
 
 import com.revrobotics.CANEncoder;
@@ -88,7 +87,7 @@ public class Robot extends TimedRobot {
     SmartDashboard.putNumber("Min Output", kMinOutput);
 
     SmartDashboard.putNumber("Shooter Speed", 0);
-    
+
   }
   
   @Override
@@ -162,5 +161,3 @@ public class Robot extends TimedRobot {
   @Override
   public void disabledInit() {
   }
-
-}
