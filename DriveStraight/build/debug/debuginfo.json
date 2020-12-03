@@ -1,9 +1,0 @@
-[
-  {
-    "artifact": "frcJava (in project DriveStraight)",
-    "target": "roborio",
-    "debugfile": "frcJava_roborio.debugconfig",
-    "project": "DriveStraight",
-    "language": "java"
-  }
-]
