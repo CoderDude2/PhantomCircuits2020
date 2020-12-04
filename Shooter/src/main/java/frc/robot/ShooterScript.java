@@ -18,7 +18,7 @@ import edu.wpi.first.wpilibj.PowerDistributionPanel;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
-public class Robot extends TimedRobot {
+public class ShooterScript extends TimedRobot {
 
   /* Joysticks */
   Joystick gamepad = new Joystick(0);

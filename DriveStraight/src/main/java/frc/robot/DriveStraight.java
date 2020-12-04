@@ -22,7 +22,7 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 
-public class Robot extends TimedRobot {
+public class DriveStraight extends TimedRobot {
   private DifferentialDrive myRobot;
 
   /* Joysticks */
