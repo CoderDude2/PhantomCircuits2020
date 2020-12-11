@@ -23,10 +23,6 @@ import io.github.pseudoresonance.pixy2api.links.Link;
  */
 
 public class PixyCamTest extends TimedRobot {
-  private static final String kDefaultAuto = "Default";
-  private static final String kCustomAuto = "My Auto";
-  private String m_autoSelected;
-  private final SendableChooser<String> m_chooser = new SendableChooser<>();
 
   private static  Pixy2 pixy;
 
