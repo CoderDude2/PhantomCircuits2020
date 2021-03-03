@@ -7,21 +7,21 @@
 
 package frc.robot;
 
+import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
-import com.ctre.phoenix.motorcontrol.InvertType; 
-import com.ctre.phoenix.motorcontrol.can.*;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.PowerDistributionPanel;
 import edu.wpi.first.cameraserver.CameraServer;
-import edu.wpi.first.wpilibj.Compressor;
+/*import com.kauailabs.navx.frc.*;
+import com.kauailabs.*;
+import com.revrobotics.ColorSensorV3;*/
 import com.revrobotics.*;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
-/*
-import com.kauailabs.navx.frc.*;
-import com.kauailabs.navx.*;*/
+import com.ctre.phoenix.motorcontrol.InvertType;
+import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
 
 public class Robot extends TimedRobot {
   private DifferentialDrive myRobot;
@@ -97,13 +97,6 @@ public class Robot extends TimedRobot {
   
   @Override
   public void autonomousPeriodic() {
-    double time = Timer.getFPGATimestamp();
-
-    if(time - startTime < 3){
-      driveSetter(0.3,0.3);
-    } else {
-      driveSetter(0,0);
-    }
     
   }
 
@@ -119,7 +112,7 @@ public class Robot extends TimedRobot {
     } else if (gamepad.getRawButton(6)) {
         myRobot.tankDrive(-1, -1);
     } else {
-        myRobot.arcadeDrive(gamepad.getRawAxis(1)*0.75, gamepad.getRawAxis(5)*0.75);
+        myRobot.arcadeDrive(gamepad.getRawAxis(1)*.75, gamepad.getRawAxis(5)*.75);
     }
 
     SmartDashboard.putNumber("L Stick", gamepad.getRawAxis(1));
