@@ -1,0 +1,11 @@
+[
+  {
+    "name": "DriveStraight (in project DriveStraight)",
+    "file": "/Users/isaacboots/Documents/GitHub/PhantomCircuits2020/DriveStraight/build/libs/DriveStraight.jar",
+    "extensions": [
+      "/Users/isaacboots/Documents/GitHub/PhantomCircuits2020/DriveStraight/build/tmp/expandedArchives/halsim_gui-2020.3.2-osxx86-64.zip_02f832af7f13f2251d7c5f32a1297a31/osx/x86-64/shared/libhalsim_gui.dylib"
+    ],
+    "librarydir": "/Users/isaacboots/Documents/GitHub/PhantomCircuits2020/DriveStraight/build/tmp/jniExtractDir",
+    "mainclass": "frc.robot.Main"
+  }
+]
