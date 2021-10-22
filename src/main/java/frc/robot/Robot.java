@@ -33,11 +33,11 @@ public class Robot extends TimedRobot {
   PowerDistributionPanel pdp = new PowerDistributionPanel();// add pdp functions
 
   /* Motor Controller IDs */
-  int leftfrontmotorid = 14;
-  int leftrearmotorid = 15;
-  int rightfrontmotorid = 1;
-  int rightrearmotorid = 0;
-  int armmotorid = 3;
+  final int leftfrontmotorid = 14;
+  final int leftrearmotorid = 15;
+  final int rightfrontmotorid = 1;
+  final int rightrearmotorid = 0;
+  final int armmotorid = 3;
 
   //This has not been set yet I am assuming. How would I set up CAN ids?
   int compressorID = 0;
